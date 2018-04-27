@@ -1,6 +1,6 @@
 # PHP Html Template System
 
-## Usage
+__Usage__
 
 ## Html
 
