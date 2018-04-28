@@ -68,7 +68,6 @@ class Html {
       $thisMatch = "/" . str_replace(" ", "\ ", $matches[$i]) . "/";
       $this->file = preg_replace($thisMatch, file_get_contents($this->path . "/includes/" . $files[$i] . ".html"), $this->file);
     }
-    echo $this->file;
   }
 }
 ?>
