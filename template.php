@@ -1,5 +1,4 @@
 <?php
-ini_set("display_errors", 1);
 class Template {
   private $dir = "";
   private $file = "";
@@ -46,6 +45,10 @@ class Html {
 
   public function show() {
     echo $this->file;
+  }
+
+  public function set($key, $val) {
+    $this->file = preg_replace("/#{ . $key  . }/", $val, $this->file);
   }
 
   public function match() {
