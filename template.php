@@ -48,7 +48,7 @@ class Html {
   }
 
   public function set($key, $val) {
-    $this->file = preg_replace("/#{ . $key  . }/", $val, $this->file);
+    $this->file = preg_replace("/(#|\?){ . $key  . }/", $val, $this->file);
   }
 
   public function match() {
