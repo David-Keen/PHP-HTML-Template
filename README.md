@@ -29,7 +29,7 @@ Note: notice `main` was parsed as $name and not `main.html`. This is because ".h
 
 
 ### Setting values
-## Required value
+## Required values
 `$html->set("title", "Homepage");`
 This code will replace `#{title}` with the string `Homepage` in the loaded html.
 Note: if required values (`#{name}`) is not set, `#{name}` will be displayed in the output
@@ -38,3 +38,6 @@ Note: if required values (`#{name}`) is not set, `#{name}` will be displayed in 
 $html->setOptional("pageSelected", "nav-selected");
 The above code will set the optional variable `?{pageSelected}` to "nav-selected".
 This function is used for setting optional values (`?{name}`). If the optional value is not set, `#?{name}` will simply be removed from the html
+
+### Displaying HTML
+`$html->show()` is used to display the HTML code. The HTML code is only rendered to the screen when this function is called.
