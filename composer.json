@@ -1,0 +1,12 @@
+{
+    "name": "thekeenprogrammer/php-html-template",
+    "type": "library",
+    "authors": [
+        {
+            "name": "David Keen",
+            "email": "contact@davidkeen.dev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
